@@ -7,7 +7,7 @@ export default function Home (){
 
         <StyledHome>
             <StyledAnimation>
-            <p class='name'>Collyn Godlewski</p>
+            <p class='name'>Collyn <br></br> Godlewski</p>
             
             <p class="line-1 anim-typewriter">Full Stack Web Developer.</p>
             </StyledAnimation>

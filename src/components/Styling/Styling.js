@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  nav {
+  
+nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -9,19 +10,31 @@ export const StyledHeader = styled.header`
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
     z-index: 0;
-    a {
-      text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    .active{
+      color:#edf2f4;
     }
 
-    h2 {
+    a {
         color: #2b2d42;
         -webkit-transition: 0.5s;
-  
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-decoration: none;
+
         &:hover{
           color: #edf2f4;
           -webkit-transform-origin: 0% 100%;
         }
+      }
   }
+
+
+// ------------------------- Media Query Time! -----------------
+
+
 `;
 
 export const StyledBody = styled.div`
@@ -42,6 +55,9 @@ height: calc(100vh - 100px);
 `;
 
 export const StyledHome = styled.div`
+
+
+
 
 height: calc(100vh - 100px);
   display: flex;
@@ -68,6 +84,12 @@ height: calc(100vh - 100px);
       color: #2b2d42;
   }
   
+  @media (max-width: 1050px){
+    font-size: .5rem;
+    .name{
+      font-size: 7rem;
+    }
+  }
 
   
 `;
