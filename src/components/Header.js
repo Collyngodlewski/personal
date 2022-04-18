@@ -9,10 +9,10 @@ export default function Header() {
           Collyn
         </NavLink>
         <NavLink to="/about" >
-          Resume
+          About
         </NavLink>
         <NavLink to="/projects" >
-          Project
+          My Work
         </NavLink>
         <NavLink to="/contact" >
           Contact

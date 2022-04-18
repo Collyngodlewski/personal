@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyledBody } from './Styling/Styling';
+import { StyledResume } from './Styling/Styling';
 export default function About(){
 
     return(
 
-        <StyledBody>
-            <h1>About</h1>
-        </StyledBody>
+        <StyledResume>
+            <h1>Adding Resume here</h1>
+        </StyledResume>
 
     )
 
