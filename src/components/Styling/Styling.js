@@ -273,12 +273,21 @@ export const StyledResume = styled.div`
   justify-content: center;
   background-color: #edf2f4;
   padding-top: 3%;
-  img{
-    width: 30%;
+  padding-bottom: 5%;
+
+  .pdf-resume{
     margin: 0 auto;
     border-radius: 0.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding-top: 1%;
+  }
+
+
+  // img{
+  //   width: 30%;
+  //   margin: 0 auto;
+    // border-radius: 0.5rem;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  //   padding-top: 1%;
   }
   button{
     width: 10%;
