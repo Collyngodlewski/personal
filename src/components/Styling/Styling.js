@@ -28,7 +28,7 @@ nav {
         &:hover{
           color: #edf2f4;
           -webkit-transform-origin: 0% 100%;
-          transform: translateY(-2px);
+          // transform: translateY(-2px);
         }
       }
   }
@@ -214,8 +214,34 @@ export const StyledProjects = styled.div`
 height: calc(100vh - 212px);
 background-color: #edf2f4;
 padding-top: 5%;
+
+display: flex;
+flex-direction: row;
+
+.card{
+  margin: 0 auto;
+  width: 35%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
+
+  border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-bottom: 2%;
+    -webkit-transition: 0.5s;
+    &:hover{
+      -webkit-transform-origin: 0% 100%;
+      transform: translateY(-2px);
+    }
+
+    img{
+      width: 500px;
+      margin: 0 auto;
+      padding-top: 1%;
+    }
+}
+
 `;
 
 export const StyledResume = styled.div`
