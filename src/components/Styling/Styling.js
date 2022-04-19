@@ -211,24 +211,32 @@ body{
 }`
 
 export const StyledProjects = styled.div`
-height: calc(100vh - 212px);
+height: calc(100vh - 86px);
+
 background-color: #edf2f4;
-padding-top: 5%;
+padding-top: 2%;
 
 display: flex;
 flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+h3{
+  color:  #2b2d42;
+}
 
 .card{
   margin: 0 auto;
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-bottom: 2%;
 
   border-radius: 0.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin-bottom: 2%;
+   
     -webkit-transition: 0.5s;
     &:hover{
       -webkit-transform-origin: 0% 100%;
@@ -239,6 +247,21 @@ flex-direction: row;
       width: 500px;
       margin: 0 auto;
       padding-top: 1%;
+    }
+
+    a{
+      color: #8d99ae;
+        -webkit-transition: 0.5s;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        &:hover{
+          color: #2b2d42;
+          -webkit-transform-origin: 0% 100%;
+        }
+
+       
     }
 }
 

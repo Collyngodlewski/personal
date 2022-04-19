@@ -22,6 +22,18 @@ export default function Projects (){
             <a href="https://github.com/BloomTech-Labs/underdog-devs-fe-a"target="_blank" rel="noreferrer">Github</a>
             <a href="https://www.underdogdevs.org/"target="_blank" rel="noreferrer">Website</a>
         </div>
+        <div class="card">
+            <img src={potLuckPlanner} alt="Potluck Planner"/>
+            <h3>Potluck Planner</h3>
+            <a href="https://github.com/Build-Week-ft-potluck-planner-8/front-end" target="_blank" rel="noreferrer">Github</a>
+            <a href="https://front-end-pearl-eight.vercel.app/" target="_blank" rel="noreferrer">Website</a>
+        </div>
+        <div class="card">
+            <img src={potLuckPlanner} alt="Potluck Planner"/>
+            <h3>Potluck Planner</h3>
+            <a href="https://github.com/Build-Week-ft-potluck-planner-8/front-end" target="_blank" rel="noreferrer">Github</a>
+            <a href="https://front-end-pearl-eight.vercel.app/" target="_blank" rel="noreferrer">Website</a>
+        </div>
          </StyledProjects>
      
     )
