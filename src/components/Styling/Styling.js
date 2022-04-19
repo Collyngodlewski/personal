@@ -269,5 +269,27 @@ h3{
 
 export const StyledResume = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  background-color: #edf2f4;
+  padding-top: 3%;
+  img{
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding-top: 1%;
+  }
+  button{
+    width: 10%;
+    padding: .5%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    -webkit-transition: 0.5s;
+    &:hover{
+     
+      background-color: #8d99ae;
+    }
+  }
 `;
