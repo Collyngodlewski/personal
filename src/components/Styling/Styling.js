@@ -108,7 +108,11 @@ height: calc(100vh - 182px);
   }
   }
 
-
+  @media (max-height: 1080px){
+      .line-1{
+        display:none;
+      }
+  }
 
   @media (max-width: 750px){
     .name{
@@ -121,6 +125,8 @@ height: calc(100vh - 182px);
     .line-1{
       display: none;
     }
+
+  
     
   }
 
@@ -128,13 +134,15 @@ height: calc(100vh - 182px);
 
 export const StyledLinks = styled.div`
   background: #edf2f4;
-
+ 
+ 
   .links-container{
     position: relative;
     z-index: 10;
     bottom: 35vh;
     background: #edf2f4;
     text-align: center;
+    
 
     
     @media (max-width: 1377px){
@@ -142,6 +150,19 @@ export const StyledLinks = styled.div`
       z-index: 10;
       bottom: 25vh;
     }
+
+    @media (max-height: 800px){
+       position: relative;
+       z-index: 10;
+       bottom: 10vh;
+    }
+
+    @media (max-height: 650px){
+      position: relative;
+      z-index: 10;
+      bottom: 0vh;
+      padding-bottom: 10%;
+   }
     
     a {
       color: #2b2d42;
@@ -176,7 +197,7 @@ html{
   overflow: hidden;
 }
 body{
-  height: calc(100vh - 8em);
+  // height: calc(100vh - 8em);
   padding: 4em;
   color: #2b2d42;
   font-family: 'Anonymous Pro', monospace;  
@@ -188,7 +209,7 @@ body{
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid #2b2d42;
-    font-size: 300%;
+    font-size: 350%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -215,18 +236,34 @@ height: calc(100vh - 86px);
 
 background-color: #edf2f4;
 padding-top: 2%;
-
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
+justify-content: space-between;
+
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @media(max-width: 1000px){
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+
+    .card{
+      margin: 2% auto;
+      width: 40%;
+    }
+  }
+}
 
 h3{
   color:  #2b2d42;
 }
 
 .card{
-  margin: 0 auto;
+  height: 50%;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -244,9 +281,10 @@ h3{
     }
 
     img{
-      width: 500px;
+      width: 80%;
       margin: 0 auto;
       padding-top: 1%;
+     
     }
 
     a{
@@ -274,6 +312,7 @@ export const StyledResume = styled.div`
   background-color: #edf2f4;
   padding-top: 3%;
   padding-bottom: 5%;
+  
 
   .pdf-resume{
     margin: 0 auto;
@@ -281,14 +320,6 @@ export const StyledResume = styled.div`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 
-
-  // img{
-  //   width: 30%;
-  //   margin: 0 auto;
-    // border-radius: 0.5rem;
-    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  //   padding-top: 1%;
-  }
   button{
     width: 10%;
     padding: .5%;
@@ -296,9 +327,14 @@ export const StyledResume = styled.div`
     margin-top: 2%;
     margin-bottom: 3%;
     -webkit-transition: 0.5s;
-    &:hover{
-     
-      background-color: #8d99ae;
+      &:hover{
+      
+        background-color: #8d99ae;
+      }
+    }
+
+    canvas{
+      width: 10%;
     }
   }
 `;

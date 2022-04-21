@@ -22,7 +22,7 @@ export default function About(){
             
             <Document 
             file={Resume} onLoadSuccess={onDocumentLoadSuccess} className="pdf-resume">
-                <Page pageNumber={pageNumber}/>
+                <Page className="Pages-css" pageNumber={pageNumber}/>
                 </Document>
                 <Button type="primary">Download</Button>
             
