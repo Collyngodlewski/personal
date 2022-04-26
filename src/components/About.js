@@ -19,13 +19,13 @@ export default function About(){
         <StyledResume>
             
             {/* <img src={ Resume } alt="Resume"/>  */}
-            
+            <div className="resume-div">
             <Document 
             file={Resume} onLoadSuccess={onDocumentLoadSuccess} className="pdf-resume">
                 <Page className="Pages-css" pageNumber={pageNumber}/>
                 </Document>
                 <Button type="primary">Download</Button>
-            
+            </div>
         </StyledResume>
 
     )

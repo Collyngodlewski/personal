@@ -47,13 +47,28 @@ padding-top: 5%;
 .contact-container{
   display: flex;
   justify-content: center;
+  
   padding-bottom: 5%;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding-top: 5%;
   
     border-radius: 0.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .contact-div{
+      padding: 3% 0;
+      input{
+        display: flex;
+        flex-direction: column;
+      }
+      textarea{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+    }
   
 
   input{
@@ -73,6 +88,9 @@ padding-top: 5%;
      
       background-color: #8d99ae;
     }
+
+
+   
 }
 
   
@@ -314,27 +332,36 @@ export const StyledResume = styled.div`
   padding-bottom: 5%;
   
 
-  .pdf-resume{
+  .resume-div{
     margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  }
+    display: flex;
+    flex-direction: column;
 
-  button{
-    width: 10%;
-    padding: .5%;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    -webkit-transition: 0.5s;
-      &:hover{
       
-        background-color: #8d99ae;
-      }
+    @media (max-width: 1000px){
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
     }
 
-    canvas{
-      width: 10%;
-    }
+       button{
+            width: 20%;
+            padding: 2% 0;
+            margin: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 3%;
+            -webkit-transition: 0.5s;
+              &:hover{
+                background-color: #8d99ae;
+            }
+         }
+
+      .pdf-resume{
+        border-radius: 0.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+ 
+    
   }
 `;
