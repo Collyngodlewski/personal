@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyledResume } from './Styling/Styling';
 import Resume from '../Assests/Resume.pdf'
 import { Button } from 'antd';
-import { Document, pdfjs, Page } from 'react-pdf'
+import { Document, pdfjs, Page} from 'react-pdf'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
@@ -24,7 +24,7 @@ export default function About(){
             file={Resume} onLoadSuccess={onDocumentLoadSuccess} className="pdf-resume">
                 <Page className="Pages-css" pageNumber={pageNumber}/>
                 </Document>
-                <Button type="primary">Download</Button>
+                {/* <Button type="primary">Download</Button> */}
             </div>
         </StyledResume>
 

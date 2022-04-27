@@ -9,7 +9,8 @@ nav {
     justify-content: space-evenly;
     background-color: #8d99ae;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 0;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -28,7 +29,6 @@ nav {
         &:hover{
           color: #edf2f4;
           -webkit-transform-origin: 0% 100%;
-          // transform: translateY(-2px);
         }
       }
   }
@@ -40,9 +40,12 @@ nav {
 
 export const StyledBody = styled.div`
 
-height: calc(100vh - 212px);
+height: 100vh;
 background-color: #edf2f4;
 padding-top: 5%;
+z-index: -10;
+position: fixed;
+width: 100%;
 
 .contact-container{
   display: flex;
@@ -100,13 +103,15 @@ export const StyledHome = styled.div`
 
 
 
-height: calc(100vh - 182px);
+
+  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   padding-top: 1%;
   background-color: #edf2f4;
   z-index: -1;
-  position: relative;
+  position: fixed;
+  width: 100%;
 
   h1{
       margin: 0 auto;
@@ -155,7 +160,8 @@ export const StyledLinks = styled.div`
  
  
   .links-container{
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 10;
     bottom: 35vh;
     background: #edf2f4;
@@ -215,7 +221,6 @@ html{
   overflow: hidden;
 }
 body{
-  // height: calc(100vh - 8em);
   padding: 4em;
   color: #2b2d42;
   font-family: 'Anonymous Pro', monospace;  
@@ -250,19 +255,20 @@ body{
 }`
 
 export const StyledProjects = styled.div`
-height: calc(100vh - 86px);
-
+height: 100vh;
+z-index: -10;
+position: fixed;
 background-color: #edf2f4;
-padding-top: 2%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+padding-top: 5%;
+
+
 
 
 .card-container{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 
   @media(max-width: 1000px){
     padding-top: 2%;
@@ -281,7 +287,7 @@ h3{
 }
 
 .card{
-  height: 50%;
+
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -299,9 +305,9 @@ h3{
     }
 
     img{
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
-      padding-top: 1%;
+      // padding-top: 1%;
      
     }
 
@@ -311,6 +317,7 @@ h3{
         font-weight: 500;
         font-size: 1.5rem;
         text-decoration: none;
+        padding-bottom: 1%;
 
         &:hover{
           color: #2b2d42;
@@ -324,19 +331,32 @@ h3{
 `;
 
 export const StyledResume = styled.div`
+  height: 100vh;
+  z-index: -10
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #edf2f4;
-  padding-top: 3%;
-  padding-bottom: 5%;
   
+
+  .react-pdf__Page__canvas {
+  
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 
   .resume-div{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+  
+  
       
     @media (max-width: 1000px){
       margin: 0 auto;
@@ -357,10 +377,7 @@ export const StyledResume = styled.div`
             }
          }
 
-      .pdf-resume{
-        border-radius: 0.5rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      }
+  
  
     
   }

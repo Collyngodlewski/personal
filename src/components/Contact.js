@@ -12,6 +12,7 @@ export default function Contact() {
   return (
     <StyledBody>
       <div class="contact-container">
+          
         <form onSubmit={handleSubmit} id="my-form" >
           <div className="contact-div">
             <label htmlFor="Name">Name</label>
