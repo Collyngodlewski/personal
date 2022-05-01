@@ -6,7 +6,7 @@ import Socials from './Socials';
 export default function Home (){
 
     return(
-      <div>
+      <div class="container-home">
         <StyledHome>
             
             <StyledAnimation>

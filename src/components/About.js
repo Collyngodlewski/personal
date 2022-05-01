@@ -8,24 +8,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 
 export default function About(){
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-      }
 
     return(
         <StyledResume>
-            
-            {/* <img src={ Resume } alt="Resume"/>  */}
-            <div className="resume-div">
-            <Document 
-            file={Resume} onLoadSuccess={onDocumentLoadSuccess} className="pdf-resume">
-                <Page className="Pages-css" pageNumber={pageNumber}/>
-                </Document>
-                {/* <Button type="primary">Download</Button> */}
+       
+
+            <div class="resume-container">
+            <iframe src="https://drive.google.com/file/d/1s5-1UPsUY2vwLIaikQRuaIx7YVWpWbpV/preview" width="640" height="800" allow="autoplay"></iframe>
             </div>
+
         </StyledResume>
 
     )

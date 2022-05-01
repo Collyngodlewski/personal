@@ -101,15 +101,12 @@ width: 100%;
 
 export const StyledHome = styled.div`
 
-
-
-
   height: 100vh;
   display: flex;
   flex-flow: column wrap;
   padding-top: 1%;
   background-color: #edf2f4;
-  z-index: -1;
+  z-index: -10;
   position: fixed;
   width: 100%;
 
@@ -131,11 +128,11 @@ export const StyledHome = styled.div`
   }
   }
 
-  @media (max-height: 1080px){
-      .line-1{
-        display:none;
-      }
-  }
+  // @media (max-height: 1080px){
+  //     .line-1{
+  //       display:none;
+  //     }
+  // }
 
   @media (max-width: 750px){
     .name{
@@ -149,8 +146,6 @@ export const StyledHome = styled.div`
       display: none;
     }
 
-  
-    
   }
 
 `;
@@ -163,30 +158,30 @@ export const StyledLinks = styled.div`
     position: fixed;
     width: 100%;
     z-index: 10;
-    bottom: 35vh;
+    bottom: 40%;
     background: #edf2f4;
     text-align: center;
     
 
     
-    @media (max-width: 1377px){
-      position: relative;
-      z-index: 10;
-      bottom: 25vh;
-    }
+  //   @media (max-width: 1377px){
+  //     position: relative;
+  //     z-index: 10;
+  //     bottom: 25vh;
+  //   }
 
-    @media (max-height: 800px){
-       position: relative;
-       z-index: 10;
-       bottom: 10vh;
-    }
+  //   @media (max-height: 800px){
+  //      position: relative;
+  //      z-index: 10;
+  //      bottom: 10vh;
+  //   }
 
-    @media (max-height: 650px){
-      position: relative;
-      z-index: 10;
-      bottom: 0vh;
-      padding-bottom: 10%;
-   }
+  //   @media (max-height: 650px){
+  //     position: relative;
+  //     z-index: 10;
+  //     bottom: 0vh;
+  //     padding-bottom: 10%;
+  //  }
     
     a {
       color: #2b2d42;
@@ -257,9 +252,10 @@ body{
 export const StyledProjects = styled.div`
 height: 100vh;
 z-index: -10;
-position: fixed;
+position: relative;
 background-color: #edf2f4;
 padding-top: 5%;
+
 
 
 
@@ -269,6 +265,8 @@ padding-top: 5%;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  
+
 
   @media(max-width: 1000px){
     padding-top: 2%;
@@ -276,7 +274,7 @@ padding-top: 5%;
     flex-direction: column;
 
     .card{
-      margin: 2% auto;
+      margin: 0;
       width: 40%;
     }
   }
@@ -339,22 +337,10 @@ export const StyledResume = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #edf2f4;
+  // border-radius: 0.5rem;
+  //         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   
 
-  .react-pdf__Page__canvas {
-  
-    margin: 0 auto;
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 0.5rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-
-  .resume-div{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
   
   
       
