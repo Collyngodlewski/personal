@@ -252,7 +252,7 @@ body{
 export const StyledProjects = styled.div`
 height: 100vh;
 z-index: -10;
-position: relative;
+position: absolute;
 background-color: #edf2f4;
 padding-top: 5%;
 

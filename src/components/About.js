@@ -15,7 +15,8 @@ export default function About(){
        
 
             <div class="resume-container">
-            <iframe src="https://drive.google.com/file/d/1s5-1UPsUY2vwLIaikQRuaIx7YVWpWbpV/preview" width="640" height="800" allow="autoplay"></iframe>
+
+        <iframe src="https://drive.google.com/file/d/1s5-1UPsUY2vwLIaikQRuaIx7YVWpWbpV/preview" width="640" height="800" allow="autoplay"></iframe>
             </div>
 
         </StyledResume>
