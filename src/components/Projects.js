@@ -4,7 +4,7 @@ import potLuckPlanner from '../Assests/potluck_planner.JPG';
 import Fitness from '../Assests/fitness.JPG';
 import Underdogs from '../Assests/UnderdogDevs.JPG';
 import Personal from '../Assests/personal.JPG'
-
+import Crypto from '../Assests/crypto.JPG'
 
 export default function Projects (){
 
@@ -36,6 +36,11 @@ export default function Projects (){
             <h3>Personal Site</h3>
             <a href="https://github.com/Collyngodlewski/personal"target="_blank" rel="noreferrer">Github</a>
             <a href="https://collyngodlewski.vercel.app/"target="_blank" rel="noreferrer">Website</a>
+        </div>
+        <div class="card">
+            <img src={Crypto} alt="Crypto"/>
+            <h3>Crypto Site</h3>
+            <a href="https://collycrypto.com"target="_blank" rel="noreferrer">Website</a>
         </div>
         </div>
          </StyledProjects>

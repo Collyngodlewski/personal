@@ -30,7 +30,14 @@ nav {
           color: #edf2f4;
           -webkit-transform-origin: 0% 100%;
         }
+
+        @media (max-width: 400px){
+          font-size: 1rem;
+         }
       }
+
+    
+      
   }
 
 
@@ -128,14 +135,15 @@ export const StyledHome = styled.div`
   }
   }
 
-  // @media (max-height: 1080px){
-  //     .line-1{
-  //       display:none;
-  //     }
-  // }
+  @media (max-height: 1080px){
+      .line-1{
+        display:none;
+      }
+  }
 
   @media (max-width: 750px){
     .name{
+      padding-top: 15%;
       width: 70%;
       font-size: 4rem;
       text-align: center;
@@ -145,8 +153,16 @@ export const StyledHome = styled.div`
     .line-1{
       display: none;
     }
-
   }
+
+  @media (max-width: 400px){
+   .name{
+     font-size: 2.5rem;
+     padding-top: 30%;
+   }
+
+
+}
 
 `;
 
@@ -164,11 +180,9 @@ export const StyledLinks = styled.div`
     
 
     
-  //   @media (max-width: 1377px){
-  //     position: relative;
-  //     z-index: 10;
-  //     bottom: 25vh;
-  //   }
+    @media (max-width: 400px){
+     bottom: 50%;
+    }
 
   //   @media (max-height: 800px){
   //      position: relative;
